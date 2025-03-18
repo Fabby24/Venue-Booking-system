@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Venue Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="venue">
+    <h2>Venue Booking</h2>
+
+    <label for="lecturerName">Lecturer's Name:</label>
+    <input type="text" id="lecturerName" placeholder="Enter Lecturer's Name">
+
+    <label for="courseTitle">Course Title:</label>
+    <input type="text" id="courseTitle" placeholder="Enter Course Title">
+
+    <label for="bookingTime">Time of Booking:</label>
+    <input type="datetime-local" id="bookingTime">
+
+    <label for="department">Department:</label>
+    <select id="department">
+        <option value="">--Select Department--</option>
+        <option value="IT">IT</option>
+        <option value="Computer Science">Computer Science</option>
+    </select>
+
+    <label for="capacityOption">Select Venue Capacity:</label>
+    <select id="capacityOption" onchange="fetchVenues()">
+        <option value="">--Select Capacity Option--</option>
+        <option value="below60">Below 60 Students</option>
+        <option value="above60">Above 60 Students</option>
+    </select>
+
+    <label for="venueSelect">Available Venues:</label>
+    <select id="venueSelect">
+        <option value="">Select capacity option first</option>
+    </select>
+
+    <button onclick="bookVenue()">Book Venue</button>
+    <p id="message"></p>
+</div>
+
+<script src="filename='java_button.js'"></script>
+
+</body>
+</html>
